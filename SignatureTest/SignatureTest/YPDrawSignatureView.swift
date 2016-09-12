@@ -1,5 +1,5 @@
 // YPDrawSignatureView is open source
-// Version 0.2.0
+// Version 1.0.0
 //
 // Copyright (c) 2014 - 2016 Yuppielabel and the project contributors
 // Available under the MIT license
@@ -35,13 +35,13 @@ public class YPDrawSignatureView: UIView {
         }
     }
     
-    @IBInspectable public var strokeColor: UIColor = UIColor.black() {
+    @IBInspectable public var strokeColor: UIColor = .black {
         didSet {
             self.strokeColor.setStroke()
         }
     }
     
-    @IBInspectable public var signatureBackgroundColor: UIColor = UIColor.white() {
+    @IBInspectable public var signatureBackgroundColor: UIColor = .white {
         didSet {
             self.backgroundColor = signatureBackgroundColor
         }
