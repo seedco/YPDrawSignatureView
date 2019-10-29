@@ -87,6 +87,8 @@ final public class YPDrawSignatureView: UIView {
     
     // MARK: - Draw
     override public func draw(_ rect: CGRect) {
+        (backgroundColor ?? .white).setFill()
+        UIGraphicsGetCurrentContext()?.fill(rect)
         self.strokeColor.setStroke()
         self.path.stroke()
     }
